@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>hello world</title>
+      <link href="/2024/07/02/hello-world-1/"/>
+      <url>/2024/07/02/hello-world-1/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第一篇博客</title>
       <link href="/2023/11/22/di-yi-pian-bo-ke/"/>
       <url>/2023/11/22/di-yi-pian-bo-ke/</url>
       
-        <content type="html"><![CDATA[<p>hello world!</p><span id="more"></span><pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">#include &lt;iostream&gt;using namespace std;int main() &#123;    cout &lt;&lt; &quot;hello world!&quot; &lt;&lt; endl;    return 0;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<p>hello world!</p><span id="more"></span><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>using namespace std<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"hello world!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       
