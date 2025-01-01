@@ -4,30 +4,23 @@
   
     
     <entry>
-      <title>hello world</title>
-      <link href="/2024/07/02/hello-world-1/"/>
-      <url>/2024/07/02/hello-world-1/</url>
+      <title>leetcode 3280.将日期转为二进制表示</title>
+      <link href="/2025/01/01/leetcode-3280-jiang-ri-qi-zhuan-wei-er-jin-zhi-biao-shi/"/>
+      <url>/2025/01/01/leetcode-3280-jiang-ri-qi-zhuan-wei-er-jin-zhi-biao-shi/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="LeetCode-3208-将日期转为二进制表示"><a href="#LeetCode-3208-将日期转为二进制表示" class="headerlink" title="LeetCode 3208.将日期转为二进制表示"></a>LeetCode 3208.将日期转为二进制表示</h1><pre class="line-numbers language-c" data-language="c"><code class="language-c">class Solution <span class="token punctuation">&#123;</span>public<span class="token operator">:</span>    string <span class="token function">binary</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>        string s<span class="token punctuation">;</span>        <span class="token keyword">while</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>            s<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token char">'0'</span> <span class="token operator">+</span> <span class="token punctuation">(</span>x <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            x <span class="token operator">>>=</span> <span class="token number">1</span><span class="token punctuation">;</span>        <span class="token punctuation">&#125;</span>        <span class="token function">reverse</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> s<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> s<span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span>    string <span class="token function">convertDateToBinary</span><span class="token punctuation">(</span>string date<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>        <span class="token keyword">int</span> year <span class="token operator">=</span> <span class="token function">stoi</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> month <span class="token operator">=</span> <span class="token function">stoi</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> day <span class="token operator">=</span> <span class="token function">stoi</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token function">binary</span><span class="token punctuation">(</span>year<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"-"</span> <span class="token operator">+</span> <span class="token function">binary</span><span class="token punctuation">(</span>month<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"-"</span> <span class="token operator">+</span> <span class="token function">binary</span><span class="token punctuation">(</span>day<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇博客</title>
-      <link href="/2023/11/22/di-yi-pian-bo-ke/"/>
-      <url>/2023/11/22/di-yi-pian-bo-ke/</url>
-      
-        <content type="html"><![CDATA[<p>hello world!</p><span id="more"></span><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>using namespace std<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"hello world!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
+      <categories>
+          
+          <category> LeetCode 每日一题 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> test </tag>
+            <tag> leetcode </tag>
             
         </tags>
       
@@ -36,11 +29,24 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2023/11/22/hello-world/"/>
-      <url>/2023/11/22/hello-world/</url>
+      <title>hello world</title>
+      <link href="/2025/01/01/hello-world/"/>
+      <url>/2025/01/01/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Hello world!</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你好 世界</title>
+      <link href="/2025/01/01/ni-hao-shi-jie/"/>
+      <url>/2025/01/01/ni-hao-shi-jie/</url>
+      
+        <content type="html"><![CDATA[<p>你好，世界！</p>]]></content>
       
       
       
