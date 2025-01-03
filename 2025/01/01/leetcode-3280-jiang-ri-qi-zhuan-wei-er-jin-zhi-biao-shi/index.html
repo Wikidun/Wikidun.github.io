@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="python hello.py  class Solution &#123; public:     string binary(int x) &#123;         string s;         while(x) &#123;             s.push_back(&#39;0&#39; + (x &amp; 1));             x &gt;&gt;&#x3D; 1;         &#125;">
+    <meta name="description" content="1234567891011121314151617181920class Solution &#123;public:    string binary(int x) &#123;        string s;        while(x) &#123;            s.push_back(&#x27;0&#x27; + (x &amp; 1));            x &amp;gt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode 3280.将日期转为二进制表示">
 <meta property="og:url" content="https://dundunkirk.github.io/2025/01/01/leetcode-3280-jiang-ri-qi-zhuan-wei-er-jin-zhi-biao-shi/index.html">
 <meta property="og:site_name" content="Kun&#39;s Blogs">
-<meta property="og:description" content="python hello.py  class Solution &#123; public:     string binary(int x) &#123;         string s;         while(x) &#123;             s.push_back(&#39;0&#39; + (x &amp; 1));             x &gt;&gt;&#x3D; 1;         &#125;">
+<meta property="og:description" content="1234567891011121314151617181920class Solution &#123;public:    string binary(int x) &#123;        string s;        while(x) &#123;            s.push_back(&#x27;0&#x27; + (x &amp; 1));            x &amp;gt">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-01-01T14:40:47.000Z">
-<meta property="article:modified_time" content="2025-01-03T06:39:02.517Z">
+<meta property="article:modified_time" content="2025-01-03T13:48:01.678Z">
 <meta property="article:author" content="dunkirk">
 <meta property="article:tag" content="leetcode">
 <meta name="twitter:card" content="summary">
@@ -56,6 +56,16 @@
     
 	<!-- mathjax -->
 	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -86,7 +96,7 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" aria-label="Previous post" href="/2025/01/03/leetcode-2/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Previous post" href="/2025/01/03/leetcode-720-wo-de-ri-cheng-an-pai-biao-i/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" aria-label="Next post" href="/2025/01/01/hello-world/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -165,28 +175,7 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">python hello.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">class Solution <span class="token punctuation">&#123;</span>
-public<span class="token operator">:</span>
-    string <span class="token function">binary</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        string s<span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            s<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token char">'0'</span> <span class="token operator">+</span> <span class="token punctuation">(</span>x <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            x <span class="token operator">>>=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span>
-        <span class="token function">reverse</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> s<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> s<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-
-    string <span class="token function">convertDateToBinary</span><span class="token punctuation">(</span>string date<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">int</span> year <span class="token operator">=</span> <span class="token function">stoi</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> month <span class="token operator">=</span> <span class="token function">stoi</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> day <span class="token operator">=</span> <span class="token function">stoi</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">return</span> <span class="token function">binary</span><span class="token punctuation">(</span>year<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"-"</span> <span class="token operator">+</span> <span class="token function">binary</span><span class="token punctuation">(</span>month<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"-"</span> <span class="token operator">+</span> <span class="token function">binary</span><span class="token punctuation">(</span>day<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">public:</span><br><span class="line">    <span class="built_in">string</span> <span class="title function_">binary</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="built_in">string</span> s;</span><br><span class="line">        <span class="keyword">while</span>(x) &#123;</span><br><span class="line">            s.push_back(<span class="string">&#x27;0&#x27;</span> + (x &amp; <span class="number">1</span>));</span><br><span class="line">            x &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(s.begin(), s.end());</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">string</span> <span class="title function_">convertDateToBinary</span><span class="params">(<span class="built_in">string</span> date)</span> &#123;</span><br><span class="line">        <span class="type">int</span> year = stoi(date.substr(<span class="number">0</span>, <span class="number">4</span>));</span><br><span class="line">        <span class="type">int</span> month = stoi(date.substr(<span class="number">5</span>, <span class="number">2</span>));</span><br><span class="line">        <span class="type">int</span> day = stoi(date.substr(<span class="number">8</span>, <span class="number">2</span>));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> binary(year) + <span class="string">&quot;-&quot;</span> + binary(month) + <span class="string">&quot;-&quot;</span> + binary(day);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
   </div>
 </article>
